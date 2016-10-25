@@ -11,6 +11,11 @@ Dist::Zilla::Plugin::Run::BeforeBuild
 Dist::Zilla::PluginBundle::Filter
 Dist::Zilla::Plugin::Git::NextVersion
 Config::Model::Tester
+Mouse
+MouseX::StrictConstructo
+MouseX::NativeTraitsr
+
+Carp::Assert::More
 
 On debian or ubuntu, do:
 
@@ -21,7 +26,9 @@ sudo aptitude install \
      libdist-zilla-perl \
      libdist-zilla-plugin-podspellingtests-perl \
      libdist-zilla-plugin-git-perl \
-     libconfig-model-tester-perl
+     libconfig-model-tester-perl \
+     libmouse-perl
+     
 
 On other systems, run:
 
@@ -38,6 +45,7 @@ $ sudo cpamn install Dist::Zilla::Plugin::Run::BeforeBuild
 $ sudo cpamn install Dist::Zilla::PluginBundle::Filter
 $ sudo cpamn install Dist::Zilla::Plugin::Git::NextVersion
 $ sudo cpamn install Config::Model::Tester
+$ sudo cpamn install Mouse
 
 Then run:
 
